@@ -17,7 +17,7 @@ function App() {
   return (
     <div className="container">
       <nav className='navbar navbar-expand-lg navbar-light bg-light'>
-        <Link to='/home' className='navbar-brand' style={{ paddingLeft: 10 }}> CRUD </Link>
+        <Link to='/' className='navbar-brand' style={{ paddingLeft: 10 }}> CRUD </Link>
         <div className='collapse navbar-collapse' id='navbarSupportedContent'>
           <ul className='navbar-nav mr-auto'>
             <li className='nav-item'>
@@ -56,13 +56,13 @@ function App() {
         </div>
       </nav>
       <Routes>
-        <Route path='/home' element={<Home />} />
-        <Route path='createStudent' element={<CreateStudent />} />
-        <Route path='listStudent' element={<ListStudent />} />
-        <Route path='editStudent' element={<EditStudent />} />
-        <Route path='createTeacher' element={<CreateTeacher />} />
-        <Route path='listTeacher' element={<ListTeacher />} />
-        <Route path='editTeacher' element={<EditTeacher />} />
+        <Route path='/' element={<Home />} />
+        <Route path='/createStudent' element={<CreateStudent />} />
+        <Route path='/listStudent' element={<ListStudent />} />
+        <Route path='/editStudent' element={<EditStudent />} />
+        <Route path='/createTeacher' element={<CreateTeacher />} />
+        <Route path='/listTeacher' element={<ListTeacher />} />
+        <Route path='/editTeacher' element={<EditTeacher />} />
       </Routes>
     </div>
   );
