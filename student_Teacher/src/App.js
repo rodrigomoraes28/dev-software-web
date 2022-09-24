@@ -16,7 +16,7 @@ import ListTeacher from './components/teachers/ListTeacher';
 function App() {
   return (
     <div className="container">
-      <nav className='navbar navbar-expand-lg navbar-light bg-light'>
+      <nav className='navbar navbar-expand-lg navbar-white bg-info'>
         <Link to='/' className='navbar-brand' style={{ paddingLeft: 10 }}> CRUD </Link>
         <div className='collapse navbar-collapse' id='navbarSupportedContent'>
           <ul className='navbar-nav mr-auto'>
