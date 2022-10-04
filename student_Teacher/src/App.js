@@ -2,15 +2,8 @@ import React from 'react'
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.bundle.min'
-import { Routes, Route, Link } from 'react-router-dom'
-
-import Home from './components/Home';
-import CreateStudent from './components/students/CreateStudent';
-import EditStudent from './components/students/EditStudent';
-import ListStudent from './components/students/ListStudent';
-import CreateTeacher from './components/teachers/CreateTeacher';
-import EditTeacher from './components/teachers/EditTeacher';
-import ListTeacher from './components/teachers/ListTeacher';
+import { Rotas } from './components/routes/routes.jsx'
+import { Link} from 'react-router-dom'
 
 
 function App() {
@@ -55,15 +48,7 @@ function App() {
           </ul>
         </div>
       </nav>
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/createStudent' element={<CreateStudent />} />
-        <Route path='/listStudent' element={<ListStudent />} />
-        <Route path='/editStudent' element={<EditStudent />} />
-        <Route path='/createTeacher' element={<CreateTeacher />} />
-        <Route path='/listTeacher' element={<ListTeacher />} />
-        <Route path='/editTeacher' element={<EditTeacher />} />
-      </Routes>
+      < Rotas />
     </div>
   );
 }
