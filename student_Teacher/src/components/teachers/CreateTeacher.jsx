@@ -1,18 +1,30 @@
 import React from "react"
 import { useState } from 'react'
+import axios from 'axios'
+import { useNavigate } from 'react-router-dom'
 
 const CreateTeacher = () => {
 
     const [name, setName] = useState(' ')
     const [siape, setSiape] = useState(' ')
     const [area, setArea] = useState(' ')
+    const navigate = useNavigate()
 
     const handleSubmit = (event)=> {
-
-        console.log(name)
+        event.preventDefault()
+        /*console.log(name)
         console.log(siape)
-        console.log(area)
+        console.log(area)*/
 
+        const newTeacher = {name, siape, area}
+        axios.post('http://localhost:3000/teacher', newTeacher)
+        .then(
+            (res) => {
+                console.log(res.data.id)
+                navigate('/listTeacher')
+            }
+        )
+        .catch(err=>console.log(err))
     }
 
     return (

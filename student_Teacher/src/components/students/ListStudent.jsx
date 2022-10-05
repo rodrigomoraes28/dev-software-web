@@ -1,15 +1,35 @@
 import React from "react"
-import { useState } from 'react'
-import { studentsList } from '../dadosExemplo.js'
+import { useState, useEffect } from 'react'
+//import { studentsList } from '../dadosExemplo.js'
+import axios from 'axios'
 
 const ListStudent = () => {
 
-    const [students, setStudents] = useState(studentsList)
+    const [students, setStudents] = useState([])
+
+    useEffect(
+        ()=>{
+            axios.get('http://localhost:3000/students')
+            .then(
+                (res)=>{
+                    setStudents(res.data)
+                }
+            )
+            .catch(
+                (err)=>{
+                    console.log(err)
+                }
+            )
+        }
+        ,
+        []
+    )
 
     const generateTableBody = ()=> {
 
         return students.map(
-            (element)=>{
+            (element,index)=>{
+                element.key = index
                 return (
                     <tr>
                         <td>{element.name}</td>
