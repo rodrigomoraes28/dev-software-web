@@ -47,6 +47,12 @@
       "course": "DEF",
       "ira": "2.2",
       "id": 8
+    },
+    {
+      "name": "Acac",
+      "course": "Dev",
+      "ira": "5",
+      "id": 9
     }
   ],
   "teacher": [
@@ -73,6 +79,18 @@
       "siape": "2252524",
       "area": "Redes Móveis",
       "id": 4
+    },
+    {
+      "name": "testes",
+      "siape": "353202022",
+      "area": "area b",
+      "id": 5
+    },
+    {
+      "name": "Adalberto",
+      "siape": "4253265",
+      "area": "História",
+      "id": 6
     }
   ]
 }
