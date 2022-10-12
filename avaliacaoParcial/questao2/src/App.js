@@ -2,13 +2,13 @@ import React from 'react'
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.bundle.min'
-import Calculadora from './components/Questao02/Calculadora'
+import Questao02 from './components/Questao02/Questao02'
 
 
 function App() {
   return (
     <div className="App">
-      <Calculadora />
+      <Questao02 />
     </div>
   );
 }

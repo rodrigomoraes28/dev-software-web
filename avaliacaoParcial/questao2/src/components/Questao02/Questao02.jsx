@@ -1,7 +1,7 @@
 import React, {useState} from "react"
 import "bootstrap/dist/css/bootstrap.min.css"
 
-const Calculadora = () => {
+const Questao02 = () => {
 
     const [numberOne, setNumberOne] = useState(0);
     const [numberTwo, setNumberTwo] = useState(0);
@@ -51,4 +51,4 @@ const Calculadora = () => {
     )
 }
 
-export default Calculadora;
+export default Questao02;
