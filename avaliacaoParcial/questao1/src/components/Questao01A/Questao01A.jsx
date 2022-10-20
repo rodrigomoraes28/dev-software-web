@@ -1,11 +1,15 @@
 import React from 'react'
 
 const Questao01A = ({nome, sobrenome, curso}) => {
+    nome = 'Michel'
+    sobrenome = 'Souza'
+    curso = 'Redes de Computadores'
+    
     return (
         <div>
-            <h3> Nome: {nome} </h3> 
-            <h3> Sobrenome: {sobrenome} </h3>
-            <h3> Curso: {curso} </h3> 
+            <h4> Nome: {nome} </h4> 
+            <h4> Sobrenome: {sobrenome} </h4>
+            <h4> Curso: {curso} </h4> 
         </div>
     )
 }

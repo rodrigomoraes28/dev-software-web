@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Questao01 = ( { children }) => {
+const Questao01 = (props) => {
     return (
         <div>
-            {children}
+            {props.children}
         </div>
     )
 }
